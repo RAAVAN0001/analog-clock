@@ -1,0 +1,65 @@
+/* Set a background gradient */
+body {
+    background: radial-gradient(circle, rgb(250, 130, 130) 0%, rgb(26, 22, 255) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Style the clock container */
+#clockContainer {
+    /* position: relative;
+    width: 40vw;
+    height: 40vw;
+    background: url("clock.png") no-repeat center/cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    border-radius: 50%; */
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    background: url("clock.png") no-repeat center/cover;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+/* Common styling for clock hands */
+.clock-hand {
+    position: absolute;
+    background: black;
+    opacity: 1;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+    transform-origin: bottom;
+
+}
+
+/* Style the hour hand */
+#hour {
+    width: 1.8%;
+    height: 25%;
+    background: linear-gradient(to bottom, #b40000, #000000);
+    top: 25%;
+    left: 48.9%;
+}
+
+/* Style the minute hand */
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 49.1%;
+    background: linear-gradient(to bottom, #5c006e, #000000);
+
+}
+
+/* Style the second hand */
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.5%;
+    background: linear-gradient(to bottom, #918f8f, #000000);
+
+}
